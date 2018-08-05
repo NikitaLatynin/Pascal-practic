@@ -1,0 +1,10 @@
+Kartoshkin;Viktor;Sergeevich;M;18;3
+Babushikina;Ol`ga;Petrovna;Zh;20;5
+Lopatkin;Oleg;Petrovich;M;20;5
+Korsikov;Petr;Evgenevich;M;25;2
+Zubkov;Igor`;Ivanovich;M;25;2
+Rozhkova;Zhenya;Petrovna;Zh;23;1
+Zabudkina;Ol`ga;Evgenevna;Zh;20;1
+Zabudkin;Viktor;Evgenevich;M;20;1
+Solokon;Artyom;Petrovich;M;20;1
+Vilkin;Viktor;Sergeevich;M;25;5

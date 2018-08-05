@@ -1,0 +1,54 @@
+Const n = 10;
+Type student=Record
+      fio:string;
+      pol:byte;
+      age:byte;
+      kurs:byte;
+     End;
+Var mas:array[1..n] of student;
+    a:array[1..n] of byte;
+    b:array[1..n] of byte;
+    i,j,k,m,imax:byte;
+Begin
+    {vvodim danny`e}
+    For i:=1 to n do
+    Begin
+      writeln('Vvedite informaciyu o ', i, ' studente');
+      write('FIO: ');
+      readln(mas[i].fio);
+      write('Pol(1 -  muzhskoj; 0 - zhenskij): ');
+      readln(mas[i].pol);
+      write('Vozrast: ');
+      readln(mas[i].age);
+      write('Kurs: ');
+      readln(mas[i].kurs);
+    End;
+    m:=0;
+    {opredelyaem skol`ko muzhchin na kakom kurse uchitsya}
+    For i:=1 to n do
+    Begin
+      k:=0;
+      For j:=1 to m do
+       if (mas[i].kurs = a[j])and(mas[i].pol = 1) then 
+       Begin
+         b[j]:=b[j]+1;
+         k:=1;
+       End;
+      if k = 0 then
+      Begin
+        m:=m+1;
+        a[m]:=mas[i].kurs;
+        b[m]:=1;
+      End;
+    End;
+    {esli sredi vvedyony`x danny`x est` muzhchiny` to}
+    if m > 0 then
+    begin
+      {opredelyaem kurs s naibol`shim procentom muzhchin}
+      imax:=1;
+      For i:=1 to m do
+       if b[i] > b[imax] then imax:=i;
+      writeln('Nomer kursa s naibol`shim procentom muzhchin = ', a[imax]);
+    end;
+    readln;
+End.

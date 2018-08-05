@@ -1,0 +1,35 @@
+Type name=(Valya, Gena, Zhenya, Kolya, Masha, Sasha, Tanya, Fedya, Shura);
+     gen=(muzh, zhen);
+     ro=140..200;
+Var  gender: array [name]  of gen;
+     rost: array [name] of ro;
+     sr:real;
+     i:name;
+     k:integer;
+Begin
+     {заполняем массивы данными}
+     gender[Valya]:=zhen;rost[Valya]:=160;
+     gender[Gena]:=muzh;rost[Gena]:=180;
+     gender[Zhenya]:=muzh;rost[Zhenya]:=170;
+     gender[Kolya]:=muzh;rost[Kolya]:=175;
+     gender[Masha]:=zhen;rost[Masha]:=155;
+     gender[Sasha]:=zhen;rost[Sasha]:=165;
+     gender[Tanya]:=zhen;rost[Tanya]:=170; 
+     gender[Fedya]:=muzh;rost[Fedya]:=185; 
+     gender[Shura]:=muzh;rost[Shura]:=160; 
+     sr:=0;k:=0;
+     {цикл по всем элементам массивов}
+     For i:=Valya to Shura do
+      {если пол является женским то}
+      if gender[i] = zhen then 
+      Begin
+        {суммируем рост}
+        sr:=sr+rost[i];
+        {и вычисляем количество женщин}
+        k:=k+1;
+      End;
+     {есди есть женщины}
+     if k <> 0 then writeln('Srednee arifmeticheskoe = ', sr / k:0:2)
+     else writeln('Zhenshhin net');
+     readln;
+End.

@@ -1,0 +1,10 @@
+Kartoshkin V.S.;1991;2007;Y;3;4;5
+Lepeshkin S.B.;1990;2006;N;5;5;5
+Romozin V.R.;1992;2008;N;5;4;5
+Strelkova K.S.;1991;2007;Y;5;4;3
+Garmoshkina L.A.;1990;2006;Y;3;3;3
+Kostozub V.S.;1992;2008;N;4;4;4
+Lepeshkin P.D.;1990;2006;Y;3;5;3
+Sokolov I.V.;1991;2007;Y;4;4;5
+Soloi R.R.;1992;2008;N;4;4;3
+Matryoshkina N.P.;1990;2006;Y;4;5;3
